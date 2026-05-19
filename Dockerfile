@@ -18,7 +18,7 @@ ENTRYPOINT  [ "java", "-jar", "./portfolio-service.jar" ]
 # WORKDIR     /usr/src
 # COPY        --from=builder /app /usr/src
 # RUN         sonar-scanner \
-#             -Dsonar.host.url=http://172.31.17.79:9000 \
+#             -Dsonar.host.url=http://34.207.195.225:9000 \
 #             -Dsonar.login=admin -Dsonar.password=admin123 -Dsonar.qualitygate.wait=true \
 #             -Dsonar.projectKey=portfolio-service \
 #             -Dsonar.sources=. -Dsonar.java.binaries=./build/classes && \
